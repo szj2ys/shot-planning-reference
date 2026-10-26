@@ -1,0 +1,39 @@
+ONE-SHOT PLANNING WORKSHEET
+By the Imgmov team, with AI assistance
+
+PURPOSE — What should the viewer notice?
+
+
+STARTING FRAME — Subject, position, setting and available reference:
+
+
+ONE ACTION — What changes? Move extra events to later shots:
+
+
+CAMERA — Fixed or one named move; what stays in frame?
+
+
+TIMING AND FINAL FRAME — Duration, final visible state and any end hold:
+
+
+CONSTRAINTS — What must stay unchanged? What may change?
+
+
+UNCERTAINTY OR TRADE-OFF — Missing information and the choice you are making:
+
+
+NEXT CHECK AND ONE REVISION — What will you inspect in a later draft?
+
+
+REVISED SHOT BRIEF — Combine your decisions into one coherent description:
+
+
+READY CHECK
+[ ] One main action.
+[ ] One consistent camera plan.
+[ ] A specific, visible ending.
+[ ] Constraints agree with the action and available reference.
+[ ] Someone else can describe the intended shot without guessing.
+
+This checks the written plan. A generated or filmed result needs its own review.
+The worked examples are hypothetical, not tested model behavior.

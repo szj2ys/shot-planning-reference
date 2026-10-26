@@ -1,0 +1,94 @@
+:root { color-scheme: light; --ink: #202a2b; --muted: #4b5859; --paper: #fafaf6; --rule: #b9c3bf; --accent: #174e68; --soft: #edf1ed; }
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1.5rem; }
+body { margin: 0; color: var(--ink); background: var(--paper); font: 1.0625rem/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: var(--accent); text-decoration-thickness: .08em; text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: .14em; }
+a:focus-visible { outline: 3px solid #916000; outline-offset: 4px; border-radius: 1px; }
+.skip { position: absolute; z-index: 2; top: -6rem; left: 1rem; padding: .7rem 1rem; background: white; }
+.skip:focus { top: .5rem; }
+.masthead, main, footer { width: min(100% - 2.5rem, 48rem); margin-inline: auto; }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--rule); padding: 1rem 0; font-size: .875rem; font-weight: 650; }
+.masthead a { display: inline-flex; align-items: center; min-height: 44px; }
+.intro { padding-top: 2.6rem; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; line-height: 1.13; text-wrap: balance; }
+h1 { font-size: clamp(2.25rem, 6vw, 3.8rem); letter-spacing: -.035em; margin: .65rem 0 1rem; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.55rem); letter-spacing: -.025em; margin: .5rem 0 1.25rem; }
+h3 { font-size: 1.125rem; line-height: 1.4; margin: 1.8rem 0 .65rem; }
+p { margin: .8rem 0 1.1rem; }
+.lead { font-size: 1.25rem; line-height: 1.5; max-width: 38rem; }
+.eyebrow { color: var(--muted); font-size: .8125rem; letter-spacing: .055em; text-transform: uppercase; font-weight: 650; margin: 0; }
+nav { display: flex; flex-wrap: wrap; column-gap: 1.8rem; row-gap: .35rem; margin: 1.15rem 0; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+.scope { color: var(--muted); font-size: .9375rem; max-width: 43rem; }
+main > section { padding: 2.8rem 0 .25rem; margin-top: 2.6rem; border-top: 1px solid var(--rule); }
+.rough { border-left: 3px solid #87958c; padding: .05rem 0 .1rem 1.2rem; margin: 1.5rem 0; }
+.rough h3 { margin-top: .2rem; font-size: .875rem; color: var(--muted); }
+blockquote { margin: .6rem 0; }
+ol, ul { padding-left: 1.4rem; }
+li { padding-left: .25rem; margin: 1rem 0; }
+.decisions li::marker { font-weight: 700; color: var(--accent); }
+.brief { background: var(--soft); border-block: 1px solid var(--rule); padding: 1.35rem 1.5rem; margin: 1.7rem 0; }
+.brief p:last-child { margin-bottom: 0; }
+.timeline { display: grid; grid-template-columns: repeat(3, 1fr); margin: 1.5rem 0; }
+.timeline div { border-left: 1px solid var(--rule); padding: .15rem 1rem; }
+dt { font-weight: 650; }
+dd { margin: .2rem 0 0; }
+.timeline dd { font-size: .9375rem; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem 1.5rem; margin: 1.5rem 0 2rem; }
+.actions a { display: inline-flex; align-items: center; min-height: 48px; }
+.primary { padding: .65rem 1rem; background: var(--accent); color: white; border-radius: 2px; font-weight: 600; text-decoration: none; }
+.primary:hover { background: #103a50; text-decoration: underline; }
+.worksheet-preview > div { display: grid; grid-template-columns: 10rem 1fr; gap: .8rem; padding: .8rem 0; border-top: 1px solid var(--rule); }
+.worksheet-preview dd { margin: 0; }
+.further { border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 2rem; }
+.further h2 { font-size: 1.65rem; }
+footer { border-top: 1px solid var(--rule); margin-top: 2rem; padding: 1.2rem 0 2rem; color: var(--muted); font-size: .875rem; }
+footer a { display: inline-flex; align-items: center; min-height: 44px; }
+.worksheet-page main { padding-top: 2rem; }
+.worksheet-page h1 { font-size: clamp(2rem, 5vw, 3rem); }
+.print-help { font-size: 1rem; }
+.print-help a { display: inline-flex; align-items: center; min-height: 44px; }
+.paper-intro { color: var(--muted); }
+.paper-fields > div { margin: 1.3rem 0; break-inside: avoid; }
+.paper-fields dd { color: var(--muted); font-size: .9375rem; }
+.write-line { display: block; min-height: 2.4rem; border-bottom: 1px solid #87958c; }
+.write-line.long { min-height: 4.8rem; }
+.paper-check { border-top: 0; padding: 1rem 0 0; margin-top: 1rem; }
+.paper-check h2 { font-size: 1.5rem; }
+.paper-credit { color: var(--muted); font-size: .8125rem; margin: 1.2rem 0 2rem; }
+@media (max-width: 540px) {
+  .intro { padding-top: 1.8rem; }
+  .masthead { font-size: .8125rem; }
+  .brief { padding: 1.1rem; }
+  .timeline { display: block; }
+  .timeline div { display: grid; grid-template-columns: 4rem 1fr; gap: .4rem; margin: .9rem 0; }
+  .timeline dd { margin: 0; }
+  .worksheet-preview > div { grid-template-columns: 1fr; gap: .15rem; }
+  .worksheet-page .masthead { align-items: flex-start; }
+  .worksheet-page .masthead a { text-align: right; max-width: 12rem; }
+}
+@media print {
+  @page { size: A4; margin: 14mm 16mm; }
+  body { background: white; color: black; font-size: 10.5pt; line-height: 1.4; }
+  .masthead, main, footer { width: 100%; }
+  .skip, nav, .actions, footer > a, .print-help, .worksheet-page .masthead a { display: none; }
+  h1 { font-size: 25pt; }
+  h2 { font-size: 20pt; }
+  h3, dt { break-after: avoid; }
+  .intro, main > section { padding-top: 1rem; margin-top: 1rem; }
+  .brief, .rough, .timeline > div, .worksheet-preview > div { break-inside: avoid; }
+  .brief { background: white; padding: .8rem 1rem; }
+  .worksheet-page .masthead { padding: 0 0 .4rem; }
+  .worksheet-page main { padding-top: .5rem; }
+  .worksheet-page h1 { font-size: 24pt; margin-bottom: .5rem; }
+  .paper-intro { margin: .3rem 0 .6rem; }
+  .paper-fields > div { margin: .65rem 0; }
+  .paper-fields dd { font-size: 9pt; }
+  .write-line { min-height: 1.45rem; }
+  .write-line.long { min-height: 3rem; }
+  .paper-check { margin: .7rem 0 0; padding: 0; }
+  .paper-check h2 { font-size: 13pt; margin: .5rem 0; }
+  .paper-check p, .paper-credit { margin: .4rem 0; }
+  .paper-credit { font-size: 8.5pt; }
+}
